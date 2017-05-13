@@ -114,29 +114,29 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)Bin\$(PlatformTarget)\</OutDir>
     <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
-    <IncludePath>$(IncludePath);$(DXSDK_DIR)\Include\;$(SolutionDir)Utilities\Includes\</IncludePath>
-    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)\Lib\$(PlatformTarget);$(SolutionDir)\Libs\$(Configuration)\$(PlatformTarget)\;</LibraryPath>
+    <IncludePath>$(IncludePath);$(DXSDK_DIR)\Include\;$(SolutionDir)Utilities\Includes\;$(FREEIMAGE_DIR_LIB)Source\;$(ASSIMP_DIR_LIB)code\</IncludePath>
+    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)\Lib\$(PlatformTarget);$(SolutionDir)\Libs\$(Configuration)\$(PlatformTarget)\;$(ASSIMP_DIR_LIB)lib\$(PlatformTarget)\$(Configuration)\;$(FREEIMAGE_DIR_LIB)Dist\$(PlatformTarget)\$(Configuration)\</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)Bin\$(PlatformTarget)\</OutDir>
     <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
-    <IncludePath>$(IncludePath);$(DXSDK_DIR)\Include\;$(SolutionDir)Utilities\Includes\</IncludePath>
-    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)\Lib\$(PlatformTarget);$(SolutionDir)\Libs\$(Configuration)\$(PlatformTarget)\;</LibraryPath>
+    <IncludePath>$(IncludePath);$(DXSDK_DIR)\Include\;$(SolutionDir)Utilities\Includes\;$(FREEIMAGE_DIR_LIB)Source\;$(ASSIMP_DIR_LIB)code\</IncludePath>
+    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)\Lib\$(PlatformTarget);$(SolutionDir)\Libs\$(Configuration)\$(PlatformTarget)\;$(ASSIMP_DIR_LIB)lib\$(PlatformTarget)\$(Configuration)\;$(FREEIMAGE_DIR_LIB)Dist\$(PlatformTarget)\$(Configuration)\</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)Bin\$(PlatformTarget)\</OutDir>
     <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
-    <IncludePath>$(IncludePath);$(DXSDK_DIR)\Include\;$(SolutionDir)Utilities\Includes\</IncludePath>
-    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)\Lib\$(PlatformTarget);$(SolutionDir)\Libs\$(Configuration)\$(PlatformTarget)\;</LibraryPath>
+    <IncludePath>$(IncludePath);$(DXSDK_DIR)\Include\;$(SolutionDir)Utilities\Includes\;$(FREEIMAGE_DIR_LIB)Source\</IncludePath>
+    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)\Lib\$(PlatformTarget);$(SolutionDir)\Libs\$(Configuration)\$(PlatformTarget)\;$(ASSIMP_DIR_LIB)lib\$(PlatformTarget)\$(Configuration)\;$(FREEIMAGE_DIR_LIB)Dist\$(PlatformTarget)\$(Configuration)\</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)Bin\$(PlatformTarget)\</OutDir>
     <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
-    <IncludePath>$(IncludePath);$(DXSDK_DIR)\Include\;$(SolutionDir)Utilities\Includes\</IncludePath>
-    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)\Lib\$(PlatformTarget);$(SolutionDir)\Libs\$(Configuration)\$(PlatformTarget)\;</LibraryPath>
+    <IncludePath>$(IncludePath);$(DXSDK_DIR)\Include\;$(SolutionDir)Utilities\Includes\;$(FREEIMAGE_DIR_LIB)Source\</IncludePath>
+    <LibraryPath>$(LibraryPath);$(DXSDK_DIR)\Lib\$(PlatformTarget);$(SolutionDir)\Libs\$(Configuration)\$(PlatformTarget)\;$(ASSIMP_DIR_LIB)lib\$(PlatformTarget)\$(Configuration)\;$(FREEIMAGE_DIR_LIB)Dist\$(PlatformTarget)\$(Configuration)\</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -154,7 +154,7 @@
       <ProgramDatabaseFile>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).pdb</ProgramDatabaseFile>
       <ProfileGuidedDatabase>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).pgd</ProfileGuidedDatabase>
       <ImportLibrary>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>Utilities.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Utilities.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;dxguid.lib;FreeImaged.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Libs\$(Configuration)\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <BuildLog>
@@ -177,7 +177,7 @@
       <ProgramDatabaseFile>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).pdb</ProgramDatabaseFile>
       <ProfileGuidedDatabase>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).pgd</ProfileGuidedDatabase>
       <ImportLibrary>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>Utilities.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Utilities.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;dxguid.lib;FreeImaged.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Libs\$(Configuration)\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <BuildLog>
@@ -204,7 +204,7 @@
       <ProgramDatabaseFile>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).pdb</ProgramDatabaseFile>
       <ProfileGuidedDatabase>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).pgd</ProfileGuidedDatabase>
       <ImportLibrary>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>Utilities.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Utilities.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;dxguid.lib;FreeImage.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Libs\$(Configuration)\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <BuildLog>
@@ -231,7 +231,7 @@
       <ProgramDatabaseFile>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).pdb</ProgramDatabaseFile>
       <ProfileGuidedDatabase>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).pgd</ProfileGuidedDatabase>
       <ImportLibrary>$(SolutionDir)Libs\$(Configuration)\$(PlatformTarget)\$(TargetName).lib</ImportLibrary>
-      <AdditionalDependencies>Utilities.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Utilities.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;dxguid.lib;FreeImage.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)Libs\$(Configuration)\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <BuildLog>
