@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Prerequisites">
+      <UniqueIdentifier>{795871f8-ff64-4a13-add3-2eeffe01b00e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{8a21a29d-ed37-465a-bc2c-5e8c4010d809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math\Headers">
+      <UniqueIdentifier>{734f743e-d618-4ccb-acee-b036b45f38e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math\Sources">
+      <UniqueIdentifier>{e0fab9be-d849-421a-bb4b-14a75f5b1833}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\String">
+      <UniqueIdentifier>{eb427f46-8f73-4775-9631-253d7fc7c49b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Includes\cePlatformDefines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\cePlatformMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\cePlatformTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\cePrerequisitesUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\ceStdHeaders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\ceAABB.h">
+      <Filter>Source Files\Math\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\ceMatrix_3X3.h">
+      <Filter>Source Files\Math\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\ceMatrix_4X4.h">
+      <Filter>Source Files\Math\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\cePlane.h">
+      <Filter>Source Files\Math\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\ceQuaternion.h">
+      <Filter>Source Files\Math\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\ceRay.h">
+      <Filter>Source Files\Math\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\ceSphere.h">
+      <Filter>Source Files\Math\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\ceVector3D.h">
+      <Filter>Source Files\Math\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\ceVector4D.h">
+      <Filter>Source Files\Math\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\ceMath.h">
+      <Filter>Source Files\Math\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\ceMemoryAllocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\ceString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\ceModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\ceVector2DI.h">
+      <Filter>Source Files\Math\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\ceVector2D.h">
+      <Filter>Source Files\Math\Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\ceAABB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ceMatrix_3X3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ceMatrix_4X4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\cePlane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\cePlatformMath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ceQuaternion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ceRay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ceSphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ceVector3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ceVector4D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ceMemoryAllocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ceVector2DI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ceVector2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+Intermediate/
+*.pdb
+*.exe
+*.dll
+*.ilk
+*.iobj
+*.ipdb
+*.db
+*.log
+*.tlog
