@@ -29,6 +29,8 @@
     <ClInclude Include="Includes\ceDeviceContext.h" />
     <ClInclude Include="Includes\ceGraphicsAPI.h" />
     <ClInclude Include="Includes\ceInputLayaout.h" />
+    <ClInclude Include="Includes\ceMesh.h" />
+    <ClInclude Include="Includes\ceModel.h" />
     <ClInclude Include="Includes\cePixelShader.h" />
     <ClInclude Include="Includes\cePrerequisitesGraphics.h" />
     <ClInclude Include="Includes\ceRenderTargetView.h" />
@@ -48,6 +50,8 @@
     <ClCompile Include="Src\ceDeviceContext.cpp" />
     <ClCompile Include="Src\ceGraphicsAPI.cpp" />
     <ClCompile Include="Src\ceInputLayaout.cpp" />
+    <ClCompile Include="Src\ceMesh.cpp" />
+    <ClCompile Include="Src\ceModel.cpp" />
     <ClCompile Include="Src\cePixelShader.cpp" />
     <ClCompile Include="Src\ceRenderTargetView.cpp" />
     <ClCompile Include="Src\ceSampler.cpp" />

@@ -71,6 +71,12 @@
     <ClInclude Include="Includes\ceBlob.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Includes\ceModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\ceMesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\ceBuffer.cpp">
@@ -122,6 +128,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Src\ceBlob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ceModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\ceMesh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

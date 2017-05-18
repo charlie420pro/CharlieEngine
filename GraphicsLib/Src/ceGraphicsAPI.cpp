@@ -5,6 +5,7 @@
 #include <d3dcompiler.h>
 #include <fstream>
 
+
 namespace ceEngineSDK
 {
 	const int32 g_iNumBuffer = 3;
@@ -633,7 +634,7 @@ namespace ceEngineSDK
 		std::fstream file;
 		String fileData;
 
-		file.open(szFileName, std::ios::in | std::ios::out | std::ios::ate);
+		file.open(szFileName, std::ios_base::in | std::ios_base::out | std::ios_base::ate);
 		iSize = file.tellg();//! Manda al final del archivo por tanto es el tamaño.
 		file.seekg(0, std::fstream::beg);//! Funcion para regresar al inicio del archivo.
 

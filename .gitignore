@@ -8,3 +8,6 @@ Intermediate/
 *.db
 *.log
 *.tlog
+*.exp
+*.lib
+MyEngine.VC.VC.opendb
